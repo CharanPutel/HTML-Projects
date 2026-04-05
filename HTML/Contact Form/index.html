@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+</head>
+<body>
+  <header>
+  <h1>Contact Us</h1>
+  <p><em>We would love to hear from you</em></p>
+  </header>
+
+  <form action="#" method="post">
+    <fieldset>
+     <label for="name">Full Name:</label>
+     <input type="text" id="name" name="fullname" placeholder="Enter Your Name" required>
+     <br><br>
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" placeholder="Enter your email" required>
+      <br><br>
+      <label for="password">Password:</label>
+      <input type="password" name="password" id="password" placeholder="Enter your password" required>
+      <br><br>
+    </fieldset>
+
+
+      <fieldset>
+        <legend>Gender</legend>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">Female</label>
+      </fieldset>
+          <br>
+      <fieldset>
+        
+        <label for="course">Select Course:</label> 
+        <br>
+        <select name="course" id="course">
+          <option value="" selected>Choose Course...</option>
+          <option value="web-dev">Web Development</option>
+          <option value="App-dev">App Development</option>
+          <option value="Data-science">Data Science</option>
+        </select>
+      </fieldset>
+   <br><br>
+     
+   <label for="message">Message:</label><br>
+   <textarea name="message" id="message" rows="4" cols="30" placeholder="Write your message"></textarea>
+   <br><br>
+
+   <input type="checkbox" id="terms" required>
+   <label for="terms">I agree to terms and conditions</label>
+   <br><br>
+   <button type="submit">Submit</button>
+   <button type="reset">Reset</button>
+      
+  </form>
+</body>
+</html>
